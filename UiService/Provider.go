@@ -8,6 +8,7 @@ import (
 	"github.com/bhbosman/goFxApp/FxWrappers/Services/UiSlides/intoductionSlide"
 	"github.com/bhbosman/goFxApp/ui"
 	"github.com/cskr/pubsub"
+	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
 	"go.uber.org/fx"
 )
@@ -47,7 +48,7 @@ func ProvideTerminalApplication() fx.Option {
 						PubSub             *pubsub.PubSub  `name:"Application"`
 					},
 				) (ui.ISlideFactory, error) {
-					return connectionSlide.NewFactory(params.ApplicationContext, params.PubSub, params.App)
+					return ConnectionSlide.NewFactory(params.ApplicationContext, params.PubSub, params.App)
 				}}),
 		fx.Provide(
 			fx.Annotated{
@@ -74,6 +75,7 @@ func ProvideTerminalApplication() fx.Option {
 						fx.In
 						UiApp                      IUiService
 						App                        *tview.Application
+						Screen                     tcell.Screen       `optional:"true"`
 						RegisteredMainWindowSlides []ui.ISlideFactory `group:"RegisteredMainWindowSlides"`
 					},
 				) (ui.IPrimitiveCloser, error) {
@@ -83,8 +85,13 @@ func ProvideTerminalApplication() fx.Option {
 			}),
 		fx.Provide(
 			fx.Annotated{
-				Target: func() *tview.Application {
-					return tview.NewApplication()
+				Target: func(
+					params struct {
+						fx.In
+					},
+				) (*tview.Application, error) {
+					result := tview.NewApplication()
+					return result, nil
 				},
 			}),
 	)
