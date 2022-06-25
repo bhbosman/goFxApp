@@ -41,6 +41,7 @@ func NewFxMainApplicationServices(
 		time.Hour,
 		time.Hour,
 		fx.Options(
+
 			fx.Populate(&shutDowner),
 			provideTerminalApplicationOptions,
 			fx.Provide(
@@ -60,7 +61,7 @@ func NewFxMainApplicationServices(
 			Zap2.ProvideZapConfigForProd(nil, nil),
 			Zap2.ProvideZapLogger(),
 			ConnectionManagerService.ProvideConnectionManager(),
-			internal.ProvideFxWithLogger(),
+
 			DateTimeService.ProvideDateTimeService(),
 			multiLogger.ProvideMultiLogFileService(),
 			Serivce.ProvideFxManager(),
