@@ -1,12 +1,11 @@
 package goFxApp
 
 import (
-	"github.com/bhbosman/goFxApp/DateTimeService"
-	"github.com/bhbosman/goFxApp/FxAppManagerService/FxServicesSlide"
-	"github.com/bhbosman/goFxApp/FxAppManagerService/Serivce"
-	multiLogger "github.com/bhbosman/goFxApp/FxWrappers/Services/MultiLoggerService"
+	"github.com/bhbosman/goFxApp/Services/DateTimeService"
+	"github.com/bhbosman/goFxApp/Services/MultiLoggerService"
 	"github.com/bhbosman/goFxApp/internal"
-	"github.com/bhbosman/goFxAppManager"
+	"github.com/bhbosman/goFxAppManager/FxServicesSlide"
+	"github.com/bhbosman/goFxAppManager/Serivce"
 	UiService2 "github.com/bhbosman/goUi/UiService"
 	"github.com/bhbosman/gocommon/Services/Providers"
 	"github.com/bhbosman/gocommon/Services/implementations/ConnectionManagerService"
@@ -72,7 +71,6 @@ func NewFxMainApplicationServices(
 			invokeTerminalApplicationOptions,
 			ConnectionManagerService.InvokeConnectionManager(),
 			Serivce.InvokeFxManager(),
-			goFxAppManager.Dddd(),
 		),
 	)
 	fxApp := fx.New(fxOptions)
