@@ -69,8 +69,8 @@ func NewFxMainApplicationServices(
 			internal.InvokeApplicationContext(),
 			multiLogger.InvokeMultiLogFileService(),
 			internal.InvokeApps(),
-			invokeTerminalApplicationOptions,
 			ConnectionManagerService.InvokeConnectionManager(),
+			invokeTerminalApplicationOptions,
 			Serivce.InvokeFxManager(),
 		),
 	)
