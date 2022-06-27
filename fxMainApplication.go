@@ -1,7 +1,7 @@
 package goFxApp
 
 import (
-	"github.com/bhbosman/goConnectionManager/ConnectionManagerService"
+	"github.com/bhbosman/goConnectionManager"
 	"github.com/bhbosman/goFxApp/Services/DateTimeService"
 	"github.com/bhbosman/goFxApp/Services/MultiLoggerService"
 	"github.com/bhbosman/goFxApp/internal"
@@ -33,7 +33,7 @@ func NewFxMainApplicationServices(
 	if !serviceApplication {
 		provideTerminalApplicationOptions = fx.Options(
 			fx.Populate(&terminalApplication),
-			FxServicesSlide.Dddddd(),
+			FxServicesSlide.ProvideServiceSlide(),
 			intoductionSlide.ProvideCoverSlide(),
 			connectionManagerSlide.ProvideConnectionManagerSlide(),
 			UiService2.ProvideTerminalApplication__())
@@ -64,7 +64,7 @@ func NewFxMainApplicationServices(
 			Zap2.ProvideZapConfigForDev(nil, nil),
 			Zap2.ProvideZapConfigForProd(nil, nil),
 			Zap2.ProvideZapLogger(),
-			ConnectionManagerService.ProvideConnectionManager(),
+			goConnectionManager.ProvideConnectionManager(),
 
 			DateTimeService.ProvideDateTimeService(),
 			multiLogger.ProvideMultiLogFileService(),
@@ -73,7 +73,7 @@ func NewFxMainApplicationServices(
 			internal.InvokeApplicationContext(),
 			multiLogger.InvokeMultiLogFileService(),
 			internal.InvokeApps(),
-			ConnectionManagerService.InvokeConnectionManager(),
+			goConnectionManager.InvokeConnectionManager(),
 			invokeTerminalApplicationOptions,
 			Serivce.InvokeFxManager(),
 		),
