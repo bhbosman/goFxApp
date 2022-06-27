@@ -1,14 +1,16 @@
 package goFxApp
 
 import (
+	"github.com/bhbosman/goConnectionManager/ConnectionManagerService"
 	"github.com/bhbosman/goFxApp/Services/DateTimeService"
 	"github.com/bhbosman/goFxApp/Services/MultiLoggerService"
 	"github.com/bhbosman/goFxApp/internal"
 	"github.com/bhbosman/goFxAppManager/FxServicesSlide"
 	"github.com/bhbosman/goFxAppManager/Serivce"
 	UiService2 "github.com/bhbosman/goUi/UiService"
+	"github.com/bhbosman/goUi/UiSlides/connectionManagerSlide"
+	"github.com/bhbosman/goUi/UiSlides/intoductionSlide"
 	"github.com/bhbosman/gocommon/Services/Providers"
-	"github.com/bhbosman/gocommon/Services/implementations/ConnectionManagerService"
 	fx2 "github.com/bhbosman/gocommon/fx"
 
 	"github.com/bhbosman/gocommon/fx/PubSub"
@@ -32,7 +34,9 @@ func NewFxMainApplicationServices(
 		provideTerminalApplicationOptions = fx.Options(
 			fx.Populate(&terminalApplication),
 			FxServicesSlide.Dddddd(),
-			UiService2.ProvideTerminalApplication())
+			intoductionSlide.ProvideCoverSlide(),
+			connectionManagerSlide.ProvideConnectionManagerSlide(),
+			UiService2.ProvideTerminalApplication__())
 		invokeTerminalApplicationOptions = fx.Options(
 			UiService2.InvokeTerminalApplication())
 	}

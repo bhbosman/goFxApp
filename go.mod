@@ -3,6 +3,7 @@ module github.com/bhbosman/goFxApp
 go 1.18
 
 require (
+	github.com/bhbosman/goConnectionManager v0.0.0-00010101000000-000000000000
 	github.com/bhbosman/goFxAppManager v0.0.0-20220625173841-bbd050c3bfe2
 	github.com/bhbosman/goUi v0.0.0-20220625174028-03193a90ee79
 	github.com/bhbosman/gocommon v0.0.0-20220625172843-54633d70219d
@@ -38,3 +39,5 @@ replace github.com/gdamore/tcell/v2 => github.com/bhbosman/tcell/v2 v2.5.2-0.202
 replace github.com/golang/mock => github.com/bhbosman/gomock v1.6.1-0.20220617134815-f277ff266f47
 
 replace github.com/bhbosman/goFxAppManager => ../goFxAppManager
+
+replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
