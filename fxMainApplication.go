@@ -8,7 +8,7 @@ import (
 	"github.com/bhbosman/goFxAppManager/FxServicesSlide"
 	"github.com/bhbosman/goFxAppManager/Serivce"
 	UiService2 "github.com/bhbosman/goUi/UiService"
-	"github.com/bhbosman/goUi/UiSlides/connectionManagerSlide"
+	connectionManagerSlide "github.com/bhbosman/goUi/UiSlides/ConnectionManagerSlide"
 	"github.com/bhbosman/goUi/UiSlides/intoductionSlide"
 	"github.com/bhbosman/gocommon/Services/Providers"
 	fx2 "github.com/bhbosman/gocommon/fx"
@@ -36,8 +36,9 @@ func NewFxMainApplicationServices(
 			FxServicesSlide.ProvideServiceSlide(),
 			intoductionSlide.ProvideCoverSlide(),
 			connectionManagerSlide.ProvideConnectionManagerSlide(),
-			UiService2.ProvideTerminalApplication__())
+			UiService2.ProvideTerminalApplication())
 		invokeTerminalApplicationOptions = fx.Options(
+			connectionManagerSlide.InvokeConnectionManagerSlide(),
 			UiService2.InvokeTerminalApplication())
 	}
 
