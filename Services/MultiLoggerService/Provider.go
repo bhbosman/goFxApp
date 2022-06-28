@@ -43,7 +43,7 @@ func ProvideMultiLogFileService() fx.Option {
 
 					loggerCore, err := params.MultiLogFileService.Build(
 						params.Config.EncoderConfig,
-						fmt.Sprintf("file:///%v/%v/log?interval=hour&file-prefix=LOG", dir, params.ApplicationName),
+						fmt.Sprintf("file:///%v/ApplicationLogFiles/%v/log?interval=hour&file-prefix=LOG", dir, params.ApplicationName),
 						zap.LevelEnablerFunc(
 							func(level zapcore.Level) bool {
 								return level >= zapcore.InfoLevel
@@ -53,7 +53,7 @@ func ProvideMultiLogFileService() fx.Option {
 					}
 					errorCore, err := params.MultiLogFileService.Build(
 						params.Config.EncoderConfig,
-						fmt.Sprintf("file:///%v/%v/log?interval=hour&file-prefix=ERR", dir, params.ApplicationName),
+						fmt.Sprintf("file:///%v/ApplicationLogFiles/%v/log?interval=hour&file-prefix=ERR", dir, params.ApplicationName),
 						zap.LevelEnablerFunc(
 							func(level zapcore.Level) bool {
 								return level >= zapcore.ErrorLevel
@@ -80,7 +80,7 @@ func ProvideMultiLogFileService() fx.Option {
 					if params.ApplicationName == "" {
 						params.ApplicationName = "UnknownApplication"
 					}
-					parseUrl, err := url.Parse(fmt.Sprintf("file:///%v/%v/error?interval=hour", dir, params.ApplicationName))
+					parseUrl, err := url.Parse(fmt.Sprintf("file:///%v/ApplicationLogFiles/%v/error?interval=hour", dir, params.ApplicationName))
 					if err != nil {
 						return nil, err
 					}
