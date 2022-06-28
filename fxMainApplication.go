@@ -8,7 +8,11 @@ import (
 	"github.com/bhbosman/goFxAppManager/FxServicesSlide"
 	"github.com/bhbosman/goFxAppManager/Serivce"
 	UiService2 "github.com/bhbosman/goUi/UiService"
-	connectionManagerSlide "github.com/bhbosman/goUi/UiSlides/ConnectionManagerSlide"
+	"github.com/bhbosman/goUi/UiSlides/GoFunctionCounterSlide"
+	"github.com/bhbosman/goUi/UiSlides/cmSlide"
+	"github.com/bhbosman/gocommon/GoFunctionCounter"
+	"go.uber.org/zap"
+
 	"github.com/bhbosman/goUi/UiSlides/intoductionSlide"
 	"github.com/bhbosman/gocommon/Services/Providers"
 	fx2 "github.com/bhbosman/gocommon/fx"
@@ -27,26 +31,30 @@ func NewFxMainApplicationServices(
 ) *TerminalAppUsingFxApp {
 	var terminalApplication *tview.Application
 	var shutDowner fx.Shutdowner
+	var logger *zap.Logger
 
 	provideTerminalApplicationOptions := fx.Options()
 	invokeTerminalApplicationOptions := fx.Options()
 	if !serviceApplication {
 		provideTerminalApplicationOptions = fx.Options(
-			fx.Populate(&terminalApplication),
+			fx.Populate(&terminalApplication, &logger),
 			FxServicesSlide.ProvideServiceSlide(),
 			intoductionSlide.ProvideCoverSlide(),
-			connectionManagerSlide.ProvideConnectionManagerSlide(),
-			UiService2.ProvideTerminalApplication())
+			cmSlide.ProvideConnectionManagerSlide(),
+			UiService2.ProvideTerminalApplication(),
+			GoFunctionCounterSlide.Provide(),
+		)
 		invokeTerminalApplicationOptions = fx.Options(
-			connectionManagerSlide.InvokeConnectionManagerSlide(),
-			UiService2.InvokeTerminalApplication())
+			cmSlide.InvokeConnectionManagerSlide(),
+			UiService2.InvokeTerminalApplication(),
+		)
 	}
 
 	fxOptions := fx2.NewFxApplicationOptions(
 		time.Hour,
 		time.Hour,
 		fx.Options(
-
+			GoFunctionCounter.Provide(),
 			fx.Populate(&shutDowner),
 			provideTerminalApplicationOptions,
 			fx.Provide(
@@ -71,12 +79,12 @@ func NewFxMainApplicationServices(
 			multiLogger.ProvideMultiLogFileService(),
 			Serivce.ProvideFxManager(),
 			fx.Options(option...),
-			internal.InvokeApplicationContext(),
 			multiLogger.InvokeMultiLogFileService(),
 			internal.InvokeApps(),
 			goConnectionManager.InvokeConnectionManager(),
 			invokeTerminalApplicationOptions,
 			Serivce.InvokeFxManager(),
+			internal.InvokeApplicationContext(),
 		),
 	)
 	fxApp := fx.New(fxOptions)
@@ -85,5 +93,6 @@ func NewFxMainApplicationServices(
 		terminalApplication,
 		shutDowner,
 		fxApp,
+		logger,
 	)
 }
