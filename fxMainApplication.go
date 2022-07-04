@@ -73,7 +73,7 @@ func NewFxMainApplicationServices(
 			Zap2.ProvideZapConfigForDev(nil, nil),
 			Zap2.ProvideZapConfigForProd(nil, nil),
 			Zap2.ProvideZapLogger(),
-			goConnectionManager.ProvideConnectionManager(),
+			goConnectionManager.ProvideCreateConnectionManager(),
 
 			DateTimeService.ProvideDateTimeService(),
 			multiLogger.ProvideMultiLogFileService(),
