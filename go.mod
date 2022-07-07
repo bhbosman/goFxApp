@@ -3,7 +3,7 @@ module github.com/bhbosman/goFxApp
 go 1.18
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20220627074017-e78b02452674
+	github.com/bhbosman/goConnectionManager v0.0.0-20220705103338-3f5a18784e60
 	github.com/bhbosman/goFxAppManager v0.0.0-20220625173841-bbd050c3bfe2
 	github.com/bhbosman/goUi v0.0.0-20220625174028-03193a90ee79
 	github.com/bhbosman/gocommon v0.0.0-20220627073905-4951fb81c325
