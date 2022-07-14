@@ -6,11 +6,12 @@ import (
 	"github.com/bhbosman/goFxApp/Services/MultiLoggerService"
 	"github.com/bhbosman/goFxApp/internal"
 	"github.com/bhbosman/goFxAppManager/FxServicesSlide"
-	"github.com/bhbosman/goFxAppManager/Serivce"
+	"github.com/bhbosman/goFxAppManager/service"
 	UiService2 "github.com/bhbosman/goUi/UiService"
 	"github.com/bhbosman/goUi/UiSlides/GoFunctionCounterSlide"
 	"github.com/bhbosman/goUi/UiSlides/cmSlide"
 	"github.com/bhbosman/gocommon/GoFunctionCounter"
+	"github.com/cskr/pubsub"
 	"go.uber.org/zap"
 
 	"github.com/bhbosman/goUi/UiSlides/intoductionSlide"
@@ -32,6 +33,11 @@ func NewFxMainApplicationServices(
 	var terminalApplication *tview.Application
 	var shutDowner fx.Shutdowner
 	var logger *zap.Logger
+
+	ss := struct {
+		fx.In
+		PubSub *pubsub.PubSub `name:"Application"`
+	}{}
 
 	provideTerminalApplicationOptions := fx.Options()
 	invokeTerminalApplicationOptions := fx.Options()
@@ -55,7 +61,7 @@ func NewFxMainApplicationServices(
 		time.Hour,
 		fx.Options(
 			GoFunctionCounter.Provide(),
-			fx.Populate(&shutDowner),
+			fx.Populate(&shutDowner, &ss),
 			provideTerminalApplicationOptions,
 			fx.Provide(
 				fx.Annotated{
@@ -74,16 +80,15 @@ func NewFxMainApplicationServices(
 			Zap2.ProvideZapConfigForProd(nil, nil),
 			Zap2.ProvideZapLogger(),
 			goConnectionManager.ProvideCreateConnectionManager(),
-
 			DateTimeService.ProvideDateTimeService(),
 			multiLogger.ProvideMultiLogFileService(),
-			Serivce.ProvideFxManager(),
-			fx.Options(option...),
+			service.ProvideFxManager(),
 			multiLogger.InvokeMultiLogFileService(),
 			internal.InvokeApps(),
 			goConnectionManager.InvokeConnectionManager(),
 			invokeTerminalApplicationOptions,
-			Serivce.InvokeFxManager(),
+			service.InvokeFxManager(),
+			fx.Options(option...),
 			internal.InvokeApplicationContext(),
 		),
 	)
@@ -94,5 +99,6 @@ func NewFxMainApplicationServices(
 		shutDowner,
 		fxApp,
 		logger,
+		ss.PubSub,
 	)
 }

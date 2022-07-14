@@ -2,6 +2,8 @@ package goFxApp
 
 import (
 	"context"
+	"github.com/bhbosman/gocommon/uiCommon"
+	"github.com/cskr/pubsub"
 	"github.com/rivo/tview"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
@@ -12,6 +14,7 @@ type TerminalAppUsingFxApp struct {
 	TerminalApp *tview.Application
 	Shutdown    fx.Shutdowner
 	logger      *zap.Logger
+	pubSub      *pubsub.PubSub
 }
 
 func (self *TerminalAppUsingFxApp) RunTerminalApp() {
@@ -21,9 +24,11 @@ func (self *TerminalAppUsingFxApp) RunTerminalApp() {
 		return
 	}
 
+	self.pubSub.Pub(uiCommon.NewUiStarted(true), uiCommon.UIState)
 	if err := self.TerminalApp.Run(); err != nil {
 		self.logger.Error("On terminal application Run error", zap.Error(err))
 	}
+	self.pubSub.Pub(uiCommon.NewUiStarted(false), uiCommon.UIState)
 
 	if err := self.TerminalApp.Close(); err != nil {
 		self.logger.Error("On terminal application Close error", zap.Error(err))
@@ -39,11 +44,13 @@ func NewTerminalAppUsingFxApp(
 	shutdown fx.Shutdowner,
 	fxApp *fx.App,
 	logger *zap.Logger,
+	pubSub *pubsub.PubSub,
 ) *TerminalAppUsingFxApp {
 	return &TerminalAppUsingFxApp{
 		FxApp:       fxApp,
 		TerminalApp: terminalApp,
 		Shutdown:    shutdown,
 		logger:      logger,
+		pubSub:      pubSub,
 	}
 }
