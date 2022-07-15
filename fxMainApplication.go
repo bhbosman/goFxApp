@@ -11,11 +11,11 @@ import (
 	"github.com/bhbosman/goUi/UiSlides/GoFunctionCounterSlide"
 	"github.com/bhbosman/goUi/UiSlides/cmSlide"
 	"github.com/bhbosman/gocommon/GoFunctionCounter"
+	"github.com/bhbosman/gocommon/services/Providers"
 	"github.com/cskr/pubsub"
 	"go.uber.org/zap"
 
 	"github.com/bhbosman/goUi/UiSlides/intoductionSlide"
-	"github.com/bhbosman/gocommon/Services/Providers"
 	fx2 "github.com/bhbosman/gocommon/fx"
 
 	"github.com/bhbosman/gocommon/fx/PubSub"
