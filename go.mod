@@ -41,9 +41,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
-replace github.com/bhbosman/gocommon => ../gocommon
-
-replace github.com/bhbosman/goUi => ../goUi
 
 replace github.com/gdamore/tcell/v2 => github.com/bhbosman/tcell/v2 v2.5.2-0.20220624055704-f9a9454fab5b
 
@@ -54,3 +51,8 @@ replace github.com/bhbosman/goFxAppManager => ../goFxAppManager
 replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
 
 replace github.com/rivo/tview => ../tview
+
+
+replace github.com/bhbosman/gocommon => ../gocommon
+
+replace github.com/bhbosman/goUi => ../goUi
