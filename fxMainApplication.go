@@ -69,7 +69,8 @@ func NewFxMainApplicationServices(
 						return applicationName
 					},
 					Name: "ApplicationName",
-				}),
+				},
+			),
 			internal.ProvideApplicationContext(),
 			Providers.ProvideUniqueSessionNumber(),
 			Providers.ProvideNewUniqueReferenceService(),
