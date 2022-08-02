@@ -3,10 +3,10 @@ module github.com/bhbosman/goFxApp
 go 1.18
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20220721070628-0f4b3c036d93
-	github.com/bhbosman/goFxAppManager v0.0.0-20220625173841-bbd050c3bfe2
-	github.com/bhbosman/goUi v0.0.0-20220725200743-ddc6ed05f1d6
-	github.com/bhbosman/gocommon v0.0.0-20220725200742-9cdc334065f3
+	github.com/bhbosman/goConnectionManager v0.0.0-20220802122816-d9db41f332dc
+	github.com/bhbosman/goFxAppManager v0.0.0-20220730103022-02c299931769
+	github.com/bhbosman/goUi v0.0.0-20220802121659-b90381157031
+	github.com/bhbosman/gocommon v0.0.0-20220802132121-5e81013de07d
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20220610163003-691f46d6f500
 	go.uber.org/fx v1.17.1
@@ -41,18 +41,17 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
-
 replace github.com/gdamore/tcell/v2 => github.com/bhbosman/tcell/v2 v2.5.2-0.20220624055704-f9a9454fab5b
 
 replace github.com/golang/mock => github.com/bhbosman/gomock v1.6.1-0.20220617134815-f277ff266f47
 
-replace github.com/bhbosman/goFxAppManager => ../goFxAppManager
-
-replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
-
-replace github.com/rivo/tview => ../tview
-
-
-replace github.com/bhbosman/gocommon => ../gocommon
-
-replace github.com/bhbosman/goUi => ../goUi
+//replace github.com/bhbosman/goFxAppManager => ../goFxAppManager
+//
+//replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
+//
+//replace github.com/rivo/tview => ../tview
+//
+//
+//replace github.com/bhbosman/gocommon => ../gocommon
+//
+//replace github.com/bhbosman/goUi => ../goUi
