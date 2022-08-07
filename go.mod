@@ -49,7 +49,8 @@ replace github.com/golang/mock => github.com/bhbosman/gomock v1.6.1-0.2022061713
 //
 //replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
 //
-//replace github.com/rivo/tview => ../tview
+replace github.com/rivo/tview => ../tview
+
 //
 //
 //replace github.com/bhbosman/gocommon => ../gocommon

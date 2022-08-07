@@ -9,9 +9,13 @@ func ProvideApplicationContext() fx.Option {
 	return fx.Provide(
 		fx.Annotated{
 			Name: "Application",
-			Target: func(params struct {
-				fx.In
-			}) (context.Context, context.CancelFunc) {
+			Target: func(
+				params struct {
+					fx.In
+				},
+			) (context.Context, context.CancelFunc) {
 				return context.WithCancel(context.Background())
-			}})
+			},
+		},
+	)
 }

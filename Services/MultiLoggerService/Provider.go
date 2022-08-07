@@ -17,13 +17,16 @@ func ProvideMultiLogFileService() fx.Option {
 	return fx.Options(
 		fx.Provide(
 			fx.Annotated{
-				Target: func(params struct {
-					fx.In
-				}) (*LoggerFileService, error) {
+				Target: func(
+					params struct {
+						fx.In
+					},
+				) (*LoggerFileService, error) {
 					instance := NewLoggerFileService(time.Hour)
 					return instance, nil
 				},
-			}),
+			},
+		),
 		fx.Provide(
 			fx.Annotated{
 				Group: "ZapCore.Core.Loggers",
@@ -47,7 +50,9 @@ func ProvideMultiLogFileService() fx.Option {
 						zap.LevelEnablerFunc(
 							func(level zapcore.Level) bool {
 								return level >= zapcore.InfoLevel
-							}))
+							},
+						),
+					)
 					if err != nil {
 						return nil, nil, err
 					}
@@ -57,22 +62,27 @@ func ProvideMultiLogFileService() fx.Option {
 						zap.LevelEnablerFunc(
 							func(level zapcore.Level) bool {
 								return level >= zapcore.ErrorLevel
-							}))
+							},
+						),
+					)
 					if err != nil {
 						return nil, nil, err
 					}
 					return loggerCore, errorCore, nil
 
 				},
-			}),
+			},
+		),
 		fx.Provide(
 			fx.Annotated{
 				Group: "ZapCore.Core.Errors",
-				Target: func(params struct {
-					fx.In
-					Config          *zap.Config
-					ApplicationName string `name:"ApplicationName" optional:"true"`
-				}) (zapcore.WriteSyncer, error) {
+				Target: func(
+					params struct {
+						fx.In
+						Config          *zap.Config
+						ApplicationName string `name:"ApplicationName" optional:"true"`
+					},
+				) (zapcore.WriteSyncer, error) {
 					dir, err := os.UserHomeDir()
 					if err != nil {
 						return nil, err
@@ -89,15 +99,24 @@ func ProvideMultiLogFileService() fx.Option {
 
 					return errorFile, nil
 				},
-			}),
+			},
+		),
 		fx.Invoke(
-			func(params struct {
-				fx.In
-				Lifecycle         fx.Lifecycle
-				LoggerFileService *LoggerFileService
-			}) error {
-				params.Lifecycle.Append(fx.Hook{OnStart: params.LoggerFileService.OnStart, OnStop: params.LoggerFileService.OnStop})
+			func(
+				params struct {
+					fx.In
+					Lifecycle         fx.Lifecycle
+					LoggerFileService *LoggerFileService
+				},
+			) error {
+				params.Lifecycle.Append(
+					fx.Hook{
+						OnStart: params.LoggerFileService.OnStart,
+						OnStop:  params.LoggerFileService.OnStop,
+					},
+				)
 				return nil
-			}),
+			},
+		),
 	)
 }

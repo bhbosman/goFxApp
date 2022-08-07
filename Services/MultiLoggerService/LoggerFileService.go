@@ -50,7 +50,8 @@ func (self *LoggerFileService) Close() error {
 func (self *LoggerFileService) Build(
 	cfg zapcore.EncoderConfig,
 	resourceUrl string,
-	enabler zapcore.LevelEnabler) (zapcore.Core, error) {
+	enabler zapcore.LevelEnabler,
+) (zapcore.Core, error) {
 	f, err := NewLoggerFile(self.interval, resourceUrl)
 	if err != nil {
 		return nil, err

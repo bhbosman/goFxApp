@@ -4,6 +4,7 @@ import (
 	"github.com/bhbosman/goConnectionManager"
 	"github.com/bhbosman/goFxApp/Services/DateTimeService"
 	"github.com/bhbosman/goFxApp/Services/MultiLoggerService"
+	"github.com/bhbosman/goFxApp/Services/fileDumpService"
 	"github.com/bhbosman/goFxApp/internal"
 	"github.com/bhbosman/goFxAppManager/FxServicesSlide"
 	"github.com/bhbosman/goFxAppManager/service"
@@ -83,6 +84,7 @@ func NewFxMainApplicationServices(
 			goConnectionManager.ProvideCreateConnectionManager(),
 			DateTimeService.ProvideDateTimeService(),
 			multiLogger.ProvideMultiLogFileService(),
+			fileDumpService.Provide(),
 			service.ProvideFxManager(),
 			multiLogger.InvokeMultiLogFileService(),
 			internal.InvokeApps(),

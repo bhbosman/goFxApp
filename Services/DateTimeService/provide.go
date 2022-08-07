@@ -10,5 +10,6 @@ func ProvideDateTimeService() fx.Option {
 		func() (*DateTimeService, IDateTimeService.IDateTimeService) {
 			v := NewDateTimeService()
 			return v, v
-		})
+		},
+	)
 }
