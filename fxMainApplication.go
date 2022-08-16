@@ -1,6 +1,7 @@
 package goFxApp
 
 import (
+	"fmt"
 	"github.com/bhbosman/goConnectionManager"
 	"github.com/bhbosman/goFxApp/Services/DateTimeService"
 	"github.com/bhbosman/goFxApp/Services/MultiLoggerService"
@@ -15,6 +16,8 @@ import (
 	"github.com/bhbosman/gocommon/services/Providers"
 	"github.com/cskr/pubsub"
 	"go.uber.org/zap"
+	"net/url"
+	"os"
 
 	"github.com/bhbosman/goUi/UiSlides/intoductionSlide"
 	fx2 "github.com/bhbosman/gocommon/fx"
@@ -66,10 +69,41 @@ func NewFxMainApplicationServices(
 			provideTerminalApplicationOptions,
 			fx.Provide(
 				fx.Annotated{
-					Target: func() string {
+					Name: "ApplicationName",
+					Target: func(
+						params struct {
+							fx.In
+						},
+					) string {
 						return applicationName
 					},
-					Name: "ApplicationName",
+				},
+			),
+			fx.Provide(
+				fx.Annotated{
+					Name: "ConfigurationFolder",
+					Target: func(
+						params struct {
+							fx.In
+							ApplicationName string `name:"ApplicationName"`
+						},
+					) (string, error) {
+						dir, err := os.UserHomeDir()
+						if err != nil {
+							return "", err
+						}
+						folder := fmt.Sprintf("file:///%v/ApplicationLogFiles/%v/Configuration", dir, params.ApplicationName)
+						urlPath, err := url.Parse(folder)
+						if err != nil {
+							return "", err
+						}
+						folder = urlPath.Path[1:]
+						err = os.MkdirAll(folder, os.ModePerm)
+						if err != nil {
+							return "", err
+						}
+						return folder, nil
+					},
 				},
 			),
 			internal.ProvideApplicationContext(),
@@ -90,9 +124,9 @@ func NewFxMainApplicationServices(
 			internal.InvokeApps(),
 			goConnectionManager.InvokeConnectionManager(),
 			invokeTerminalApplicationOptions,
-			service.InvokeFxManager(),
 			fx.Options(option...),
 			internal.InvokeApplicationContext(),
+			service.InvokeFxManagerStartAll(),
 		),
 	)
 	fxApp := fx.New(fxOptions)

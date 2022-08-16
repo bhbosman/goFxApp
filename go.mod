@@ -15,7 +15,7 @@ require (
 )
 
 require (
-	github.com/bhbosman/goCommsDefinitions v0.0.0-20220724214237-63eea03e3695 // indirect
+	github.com/bhbosman/goCommsDefinitions v0.0.0-20220801175552-c5aa68065af3 // indirect
 	github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf // indirect
 	github.com/cenkalti/backoff/v4 v4.0.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -45,14 +45,17 @@ replace github.com/gdamore/tcell/v2 => github.com/bhbosman/tcell/v2 v2.5.2-0.202
 
 replace github.com/golang/mock => github.com/bhbosman/gomock v1.6.1-0.20220617134815-f277ff266f47
 
-//replace github.com/bhbosman/goFxAppManager => ../goFxAppManager
+replace github.com/bhbosman/goFxAppManager => ../goFxAppManager
+
 //
-//replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
+replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
+
 //
 replace github.com/rivo/tview => ../tview
 
 //
 //
-//replace github.com/bhbosman/gocommon => ../gocommon
+replace github.com/bhbosman/gocommon => ../gocommon
+
 //
-//replace github.com/bhbosman/goUi => ../goUi
+replace github.com/bhbosman/goUi => ../goUi
