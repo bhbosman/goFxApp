@@ -32,7 +32,7 @@ func NewLoggerFile(interval time.Duration, urlResource string) (
 	result := &LoggerFile{
 		BaseFile: NewBaseFile(interval, urlPath, urlPath.Path[1:]),
 	}
-	err = os.MkdirAll(result.folder, os.ModeDir)
+	err = os.MkdirAll(result.folder, os.ModePerm)
 
 	if err != nil {
 		return nil, err
