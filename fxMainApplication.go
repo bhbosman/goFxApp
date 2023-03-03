@@ -48,7 +48,7 @@ func NewFxMainApplicationServices(
 	if !serviceApplication {
 		provideTerminalApplicationOptions = fx.Options(
 			fx.Populate(&terminalApplication, &logger),
-			FxServicesSlide.ProvideServiceSlide(),
+			FxServicesSlide.ProvideServiceSlide(), //--
 			intoductionSlide.ProvideCoverSlide(),
 			cmSlide.ProvideConnectionManagerSlide(),
 			UiService2.ProvideTerminalApplication(),
@@ -119,7 +119,7 @@ func NewFxMainApplicationServices(
 			DateTimeService.ProvideDateTimeService(),
 			multiLogger.ProvideMultiLogFileService(),
 			fileDumpService.Provide(),
-			service.ProvideFxManager(),
+			service.ProvideFxManager(), //---
 			multiLogger.InvokeMultiLogFileService(),
 			internal.InvokeApps(),
 			goConnectionManager.InvokeConnectionManager(),
