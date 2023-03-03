@@ -95,7 +95,7 @@ func ProvideMultiLogFileService() fx.Option {
 						return nil, err
 					}
 					errorFile := NewErrorFile(time.Hour, parseUrl, parseUrl.Path[1:])
-					err = os.MkdirAll(errorFile.folder, os.ModeDir)
+					err = os.MkdirAll(errorFile.folder, os.ModePerm)
 
 					return errorFile, nil
 				},
