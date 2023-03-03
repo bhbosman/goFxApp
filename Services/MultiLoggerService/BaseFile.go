@@ -16,7 +16,7 @@ type BaseFile struct {
 }
 
 func (self *BaseFile) BuildFileName(prefix string) string {
-	return fmt.Sprintf("%v\\%v_%v_%v.log",
+	return fmt.Sprintf("%v/%v_%v_%v.log",
 		self.folder,
 		prefix,
 		self.current.Format("20060102_150405"),
