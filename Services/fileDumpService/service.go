@@ -1,7 +1,7 @@
 package fileDumpService
 
 import (
-	"github.com/bhbosman/gocommon/Services/interfaces"
+	"github.com/bhbosman/gocommon/services/interfaces"
 	"io"
 	"os"
 	"path/filepath"
