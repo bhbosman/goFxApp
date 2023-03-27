@@ -2,7 +2,7 @@ package fileDumpService
 
 import (
 	"fmt"
-	"github.com/bhbosman/gocommon/Services/interfaces"
+	"github.com/bhbosman/gocommon/services/interfaces"
 	"go.uber.org/fx"
 	"net/url"
 	"os"
