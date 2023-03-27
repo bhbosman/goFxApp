@@ -3,19 +3,21 @@ module github.com/bhbosman/goFxApp
 go 1.18
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20220802122816-d9db41f332dc
-	github.com/bhbosman/goFxAppManager v0.0.0-20220730103022-02c299931769
-	github.com/bhbosman/goUi v0.0.0-20230302065227-24c3cb06165e
-	github.com/bhbosman/gocommon v0.0.0-20230303055326-d59d6b655a59
+	github.com/bhbosman/goConnectionManager v0.0.0-20230312204225-183859f3cef5
+	github.com/bhbosman/goFxAppManager v0.0.0-20230320053418-125763bdf8d5
+	github.com/bhbosman/goUi v0.0.0-20230312204226-c4c7ec5f0899
+	github.com/bhbosman/gocommon v0.0.0-20230320083256-4088c43f62a7
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20220610163003-691f46d6f500
 	go.uber.org/fx v1.19.2
-	go.uber.org/multierr v1.6.0
-	go.uber.org/zap v1.23.0
+	go.uber.org/multierr v1.10.0
+	go.uber.org/zap v1.24.0
 )
 
+require github.com/bhbosman/goConn v0.0.0-20230320102125-d7416dd8d6dc // indirect
+
 require (
-	github.com/bhbosman/goCommsDefinitions v0.0.0-20230308211643-24fe88b2378e // indirect
+	github.com/bhbosman/goCommsDefinitions v0.0.0-20230320101758-971a50fdbf8c // indirect
 	github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf // indirect
 	github.com/cenkalti/backoff/v4 v4.1.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
