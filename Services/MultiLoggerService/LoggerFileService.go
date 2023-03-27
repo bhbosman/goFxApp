@@ -2,7 +2,7 @@ package multiLogger
 
 import (
 	"context"
-	"github.com/bhbosman/gocommon/Services/IFxService"
+	"github.com/bhbosman/gocommon/services/IFxService"
 	"go.uber.org/multierr"
 	"go.uber.org/zap/zapcore"
 	"io"
