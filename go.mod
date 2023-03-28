@@ -3,7 +3,7 @@ module github.com/bhbosman/goFxApp
 go 1.18
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20230312204225-183859f3cef5
+	github.com/bhbosman/goConnectionManager v0.0.0-20230328152946-8854ec40e34b
 	github.com/bhbosman/goFxAppManager v0.0.0-20230320053418-125763bdf8d5
 	github.com/bhbosman/goUi v0.0.0-20230328181044-49e31970d158
 	github.com/bhbosman/gocommon v0.0.0-20230328150634-566a0f916878
@@ -14,7 +14,7 @@ require (
 	go.uber.org/zap v1.24.0
 )
 
-require github.com/bhbosman/goConn v0.0.0-20230320102125-d7416dd8d6dc // indirect
+require github.com/bhbosman/goConn v0.0.0-20230327111455-7a39299fb0aa // indirect
 
 require (
 	github.com/bhbosman/goCommsDefinitions v0.0.0-20230320101758-971a50fdbf8c // indirect
