@@ -6,7 +6,7 @@ require (
 	github.com/bhbosman/goConnectionManager v0.0.0-20230328152946-8854ec40e34b
 	github.com/bhbosman/goFxAppManager v0.0.0-20230320053418-125763bdf8d5
 	github.com/bhbosman/goUi v0.0.0-20230328181044-49e31970d158
-	github.com/bhbosman/gocommon v0.0.0-20230328190055-dffeb142435d
+	github.com/bhbosman/gocommon v0.0.0-20230328205958-d21444a729d1
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20220610163003-691f46d6f500
 	go.uber.org/fx v1.19.2
