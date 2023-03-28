@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/bhbosman/goConnectionManager v0.0.0-20230312204225-183859f3cef5
 	github.com/bhbosman/goFxAppManager v0.0.0-20230320053418-125763bdf8d5
-	github.com/bhbosman/goUi v0.0.0-20230312204226-c4c7ec5f0899
+	github.com/bhbosman/goUi v0.0.0-20230328181044-49e31970d158
 	github.com/bhbosman/gocommon v0.0.0-20230328150634-566a0f916878
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20220610163003-691f46d6f500
@@ -60,4 +60,4 @@ replace github.com/rivo/tview => ../tview
 //replace github.com/bhbosman/gocommon => ../gocommon
 
 //
-replace github.com/bhbosman/goUi => ../goUi
+//replace github.com/bhbosman/goUi => ../goUi
