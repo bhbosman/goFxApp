@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/bhbosman/goConnectionManager v0.0.0-20230328152946-8854ec40e34b
-	github.com/bhbosman/goFxAppManager v0.0.0-20230320053418-125763bdf8d5
+	github.com/bhbosman/goFxAppManager v0.0.0-20230328205958-0dcafa6bef73
 	github.com/bhbosman/goUi v0.0.0-20230328181044-49e31970d158
 	github.com/bhbosman/gocommon v0.0.0-20230328205958-d21444a729d1
 	github.com/cskr/pubsub v1.0.2
@@ -49,4 +49,3 @@ replace github.com/golang/mock => github.com/bhbosman/gomock v1.6.1-0.2023030206
 replace github.com/cskr/pubsub => github.com/bhbosman/pubsub v1.0.3-0.20220802200819-029949e8a8af
 
 replace github.com/rivo/tview => github.com/bhbosman/tview v0.0.0-20230310100135-f8b257a85d36
-
