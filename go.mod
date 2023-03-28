@@ -3,10 +3,10 @@ module github.com/bhbosman/goFxApp
 go 1.18
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20230312204225-183859f3cef5
+	github.com/bhbosman/goConnectionManager v0.0.0-20230328152946-8854ec40e34b
 	github.com/bhbosman/goFxAppManager v0.0.0-20230320053418-125763bdf8d5
-	github.com/bhbosman/goUi v0.0.0-20230312204226-c4c7ec5f0899
-	github.com/bhbosman/gocommon v0.0.0-20230320083256-4088c43f62a7
+	github.com/bhbosman/goUi v0.0.0-20230328181044-49e31970d158
+	github.com/bhbosman/gocommon v0.0.0-20230328150634-566a0f916878
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20220610163003-691f46d6f500
 	go.uber.org/fx v1.19.2
@@ -14,10 +14,9 @@ require (
 	go.uber.org/zap v1.24.0
 )
 
-require github.com/bhbosman/goConn v0.0.0-20230320102125-d7416dd8d6dc // indirect
-
 require (
-	//github.com/bhbosman/goCommsDefinitions v0.0.0-20230320101758-971a50fdbf8c // indirect
+	github.com/bhbosman/goCommsDefinitions v0.0.0-20230320101758-971a50fdbf8c // indirect
+	github.com/bhbosman/goConn v0.0.0-20230327111455-7a39299fb0aa // indirect
 	github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf // indirect
 	github.com/cenkalti/backoff/v4 v4.1.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -47,17 +46,8 @@ replace github.com/gdamore/tcell/v2 => github.com/bhbosman/tcell/v2 v2.5.2-0.202
 
 replace github.com/golang/mock => github.com/bhbosman/gomock v1.6.1-0.20230302060806-d02c40b7514e
 
-replace github.com/bhbosman/goFxAppManager => ../goFxAppManager
+replace github.com/cskr/pubsub => github.com/bhbosman/pubsub v1.0.3-0.20220802200819-029949e8a8af
 
-//
-replace github.com/bhbosman/goConnectionManager => ../goConnectionManager
+replace github.com/rivo/tview => github.com/bhbosman/tview v0.0.0-20230310100135-f8b257a85d36
 
-//
-replace github.com/rivo/tview => ../tview
-
-//
-//
-replace github.com/bhbosman/gocommon => ../gocommon
-
-//
-replace github.com/bhbosman/goUi => ../goUi
+//replace github.com/bhbosman/goFxAppManager => ../goFxAppManager

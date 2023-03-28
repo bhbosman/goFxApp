@@ -1,7 +1,7 @@
 package DateTimeService
 
 import (
-	"github.com/bhbosman/gocommon/Services/IDateTimeService"
+	"github.com/bhbosman/gocommon/services/IDateTimeService"
 	"go.uber.org/fx"
 )
 
