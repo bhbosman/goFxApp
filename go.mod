@@ -3,9 +3,9 @@ module github.com/bhbosman/goFxApp
 go 1.18
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20230328152946-8854ec40e34b
-	github.com/bhbosman/goFxAppManager v0.0.0-20230328205958-0dcafa6bef73
-	github.com/bhbosman/goUi v0.0.0-20230328181044-49e31970d158
+	github.com/bhbosman/goConnectionManager v0.0.0-20230328221032-2e48eb2721d0
+	github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e
+	github.com/bhbosman/goUi v0.0.0-20230328220052-834528d68f6d
 	github.com/bhbosman/gocommon v0.0.0-20230328220050-dafaab862dd2
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20220610163003-691f46d6f500
@@ -16,7 +16,7 @@ require (
 
 require (
 	github.com/bhbosman/goCommsDefinitions v0.0.0-20230320101758-971a50fdbf8c // indirect
-	github.com/bhbosman/goConn v0.0.0-20230327111455-7a39299fb0aa // indirect
+	github.com/bhbosman/goConn v0.0.0-20230328145648-e6bab0984275 // indirect
 	github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf // indirect
 	github.com/cenkalti/backoff/v4 v4.1.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
