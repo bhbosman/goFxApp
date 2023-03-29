@@ -16,7 +16,7 @@ require (
 
 require (
 	github.com/bhbosman/goCommsDefinitions v0.0.0-20230320101758-971a50fdbf8c // indirect
-	github.com/bhbosman/goConn v0.0.0-20230328145648-e6bab0984275 // indirect
+
 	github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf // indirect
 	github.com/cenkalti/backoff/v4 v4.1.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -56,7 +56,7 @@ replace (
 	github.com/bhbosman/goCommsNetDialer => ../goCommsNetDialer
 	github.com/bhbosman/goCommsNetListener => ../goCommsNetListener
 	github.com/bhbosman/goCommsStacks => ../goCommsStacks
-	github.com/bhbosman/goConn => ../goConn
+
 	github.com/bhbosman/goFxApp => ../goFxApp
 	github.com/bhbosman/goFxAppManager => ../goFxAppManager
 	github.com/bhbosman/goMessages => ../goMessages
