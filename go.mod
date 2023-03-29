@@ -6,7 +6,7 @@ require (
 	github.com/bhbosman/goConnectionManager v0.0.0-20230328221032-2e48eb2721d0
 	github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e
 	github.com/bhbosman/goUi v0.0.0-20230328220052-834528d68f6d
-	github.com/bhbosman/gocommon v0.0.0-20230328220050-dafaab862dd2
+	github.com/bhbosman/gocommon v0.0.0-20230329101749-40db0f52d859
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20220610163003-691f46d6f500
 	go.uber.org/fx v1.19.2
@@ -16,7 +16,6 @@ require (
 
 require (
 	github.com/bhbosman/goCommsDefinitions v0.0.0-20230320101758-971a50fdbf8c // indirect
-
 	github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf // indirect
 	github.com/cenkalti/backoff/v4 v4.1.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
