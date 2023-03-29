@@ -2,7 +2,7 @@ package internal
 
 import (
 	"context"
-	"github.com/bhbosman/goConn"
+	"github.com/bhbosman/gocommon"
 	"go.uber.org/fx"
 )
 
@@ -12,8 +12,8 @@ func InvokeApps() fx.Option {
 			params struct {
 				fx.In
 				Lifecycle fx.Lifecycle
-				Apps      []*fx.App                  `group:"Apps"`
-				FnApps    []goConn.CreateAppCallback `group:"Apps"`
+				Apps      []*fx.App                    `group:"Apps"`
+				FnApps    []gocommon.CreateAppCallback `group:"Apps"`
 			},
 		) error {
 			for _, item := range params.Apps {
