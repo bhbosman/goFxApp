@@ -44,6 +44,8 @@ github.com/bhbosman/goFxAppManager v0.0.0-20250308154830-a52fe01a02cc h1:ydDWvCN
 github.com/bhbosman/goFxAppManager v0.0.0-20250308154830-a52fe01a02cc/go.mod h1:LrzBA2tofPIg1Pb6T5b1RSa684I15mnJImTUniiIf0M=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308162229-1292fdd07fc0 h1:RuIV4MxWan4GrcL78wISrr1ZfgbTpFkmtBNLCkYolbQ=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308162229-1292fdd07fc0/go.mod h1:S7X5ohnYvimXkHR3pbCeqoS2BH0lbL9hNjNW/hdz8qg=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308192215-e35e337e2f4e h1:ujOQ7T01LCruMlkmNOKvChxjTH2APeazx64/BMNn/AA=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308192215-e35e337e2f4e/go.mod h1:AQYfa/uPA0OfPteZRx5p7NRkgIEhJ6ukg3PIEnBvEFs=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877 h1:ggdUfW6j/BcE8NSielxBeGpOeVKq5tosSxKfbe40Rlc=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877/go.mod h1:DdwkPEkzvKp7S61lzxjViCYGCQg7Rts0UWoMIaKvxj4=
 github.com/bhbosman/goUi v0.0.0-20250308064519-26f29e163722 h1:dZCnL1PLX8x2WBzGirFUPhzSPi3ndOxHggfuXwbKOWk=
@@ -62,6 +64,8 @@ github.com/bhbosman/goUi v0.0.0-20250308152754-9da2082d1fbd h1:mlOCrsiUrUUk0sZnq
 github.com/bhbosman/goUi v0.0.0-20250308152754-9da2082d1fbd/go.mod h1:ls7psAPSzVibEtClXaZDx5T8fYStM22esQ+113Ymlgw=
 github.com/bhbosman/goUi v0.0.0-20250308162123-529b89b32854 h1:lNt1+Ut6mSvGSi7Skhqq/YrCF/585CNQYURaTSjNcfU=
 github.com/bhbosman/goUi v0.0.0-20250308162123-529b89b32854/go.mod h1:qktfyS0nt1q5nOQMb/9/2KwHPXWWNXu9M1YNzmGYUfg=
+github.com/bhbosman/goUi v0.0.0-20250308192106-f0dba2b1ada7 h1:TjaFwfhgJrIlkULWH71Aj+J9LKE34Z2rgJpeEY6YHTQ=
+github.com/bhbosman/goUi v0.0.0-20250308192106-f0dba2b1ada7/go.mod h1:4npkyOdvPaIf3JZHD1C8VntmWlUXRh6sMgAu+l8uUyU=
 github.com/bhbosman/gocommon v0.0.0-20230507180205-b30f653fb84c h1:Gak0cmo63hRuZw3nA9UTbJLu4YUT5zEsYJsI0LCEeKE=
 github.com/bhbosman/gocommon v0.0.0-20230507180205-b30f653fb84c/go.mod h1:psJ00h0jPYAZNqF9kjJio25qy1ra1IKj3zWeCp+tTQg=
 github.com/bhbosman/gocommon v0.0.0-20250307235859-f370cb0a3bac/go.mod h1:EPYuWdqTCX8B9u0Q7w4u4FOalx2wbXm+KFQQbS1VHOo=
@@ -87,6 +91,7 @@ github.com/bhbosman/pubsub v1.0.3-0.20220802200819-029949e8a8af h1:OkZ6Yjh5lWL1c
 github.com/bhbosman/pubsub v1.0.3-0.20220802200819-029949e8a8af/go.mod h1:uflhLeXzvTqu2aIOB7S7LvtVBnLzDluyHbBYwrPZfWc=
 github.com/bhbosman/pubsub v1.0.3-0.20250308124829-e5731aa33222 h1:cHtirgrswJP8goqbY1edxxFUIWcwo9+fVKWR1LAoijo=
 github.com/bhbosman/pubsub v1.0.3-0.20250308124829-e5731aa33222/go.mod h1:k9O2AJEIxJfyjM6xKczmuBumvRC+Pee76jW4Ir0+nTU=
+github.com/bhbosman/pubsub v1.0.3-0.20250308162024-50f212a35484 h1:7L9tOPXEY7T3OCI5uNszNWJ2GqfJAREkZEw77Ki6VZA=
 github.com/bhbosman/pubsub v1.0.3-0.20250308162024-50f212a35484/go.mod h1:/cxRJx2sbd/mII/T3GTLM/2EUisAfq6Zy8qb9lBqpRk=
 github.com/bhbosman/tcell/v2 v2.5.2-0.20220624055704-f9a9454fab5b h1:mfhKWKkAnnEpjWYcFHR5B3G7VqYSaOJJ5SENyky5nOw=
 github.com/bhbosman/tcell/v2 v2.5.2-0.20220624055704-f9a9454fab5b/go.mod h1:wSkrPaXoiIWZqW/g7Px4xc79di6FTcpB8tvaKJ6uGBo=

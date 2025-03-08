@@ -4,8 +4,8 @@ go 1.24.0
 
 require (
 	github.com/bhbosman/goConnectionManager v0.0.0-20250308162041-c3d88e4a7878
-	github.com/bhbosman/goFxAppManager v0.0.0-20250308162229-1292fdd07fc0
-	github.com/bhbosman/goUi v0.0.0-20250308162123-529b89b32854
+	github.com/bhbosman/goFxAppManager v0.0.0-20250308192215-e35e337e2f4e
+	github.com/bhbosman/goUi v0.0.0-20250308192106-f0dba2b1ada7
 	github.com/bhbosman/gocommon v0.0.0-20250308155359-4baa9bec452e
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20241227133733-17b7edb88c57
