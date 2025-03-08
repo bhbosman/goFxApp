@@ -18,7 +18,7 @@ require (
 
 require (
 	github.com/bhbosman/goCommsDefinitions v0.0.0-20250307125227-bfc368fdddf9 // indirect
-	github.com/bhbosman/goConn v0.0.0-20230327111455-7a39299fb0aa // indirect
+
 	github.com/bhbosman/goerrors v0.0.0-20250307194237-312d070c8e38 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
