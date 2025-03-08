@@ -3,9 +3,9 @@ module github.com/bhbosman/goFxApp
 go 1.24.0
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20250308145438-ea83361668a5
+	github.com/bhbosman/goConnectionManager v0.0.0-20250308150558-5d463bc5c9e3
 	github.com/bhbosman/goFxAppManager v0.0.0-20250308140124-9230c32fe2ee
-	github.com/bhbosman/goUi v0.0.0-20250308145459-134c11444111
+	github.com/bhbosman/goUi v0.0.0-20250308151444-1fc0528a2178
 	github.com/bhbosman/gocommon v0.0.0-20250308150148-56b7e6e14bff
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20241227133733-17b7edb88c57

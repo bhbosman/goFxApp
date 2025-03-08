@@ -26,6 +26,8 @@ github.com/bhbosman/goConnectionManager v0.0.0-20250308133907-06eddcd798f6 h1:F/
 github.com/bhbosman/goConnectionManager v0.0.0-20250308133907-06eddcd798f6/go.mod h1:dy73KjrQewhG9PsdJcPJ2d5Jz9BLcyfQAi7kjwKhhqI=
 github.com/bhbosman/goConnectionManager v0.0.0-20250308145438-ea83361668a5 h1:/uTy0VE3M0J74cc8lmpWhHOa9Qq5zepZyHSuI6fvBE0=
 github.com/bhbosman/goConnectionManager v0.0.0-20250308145438-ea83361668a5/go.mod h1:7+MswMa2jldwZ2qZi6oksXHfBgRlX2eLXL/juWIpDwg=
+github.com/bhbosman/goConnectionManager v0.0.0-20250308150558-5d463bc5c9e3 h1:JFJS80FndQUAy8oYP/QQY+JwcoiYCdne/EryKWw868A=
+github.com/bhbosman/goConnectionManager v0.0.0-20250308150558-5d463bc5c9e3/go.mod h1:5lspf2JKYL4tq5nNWCTVKg3LRwgHjCMvGz/HmAz3QY8=
 github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e h1:giFq6ZeuuADPqmulVlZ/O1u1iWFR4wBUylQkQx6rctA=
 github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e/go.mod h1:rQwtY8b+UvdRUVwarMWNWumYE3Pvn63gmaD7pzCRu5s=
 github.com/bhbosman/goFxAppManager v0.0.0-20250307145515-bda0fa4d9959 h1:OzIVWL2V4mgDTjH5qYmgwk6XZ5ubQPP4KI/Xbkv1+AM=
@@ -48,6 +50,8 @@ github.com/bhbosman/goUi v0.0.0-20250308132651-2a5e82ef72b0 h1:3ordy/bAGZcIlTsoY
 github.com/bhbosman/goUi v0.0.0-20250308132651-2a5e82ef72b0/go.mod h1:7oMy2ehnSEUqADTLjWJa+q1Coolp3MEL3yquKabG1Qg=
 github.com/bhbosman/goUi v0.0.0-20250308145459-134c11444111 h1:zLUCgoIU9kpolN127wL6Tt0c9hiiwCMv+bkctXsVzFw=
 github.com/bhbosman/goUi v0.0.0-20250308145459-134c11444111/go.mod h1:Sb+lHPb2x1Xv1SZR67dKpkb9LU15OQwfVPtv+CCPCVw=
+github.com/bhbosman/goUi v0.0.0-20250308151444-1fc0528a2178 h1:WzVQf8zB+g0FUawiBQmv3rOxlfB7ao/tdRHWnsbgJC8=
+github.com/bhbosman/goUi v0.0.0-20250308151444-1fc0528a2178/go.mod h1:zixQI2WcU7dv2Jj8PVzaL4ITiFzqn+CFr1G8hr5L8O4=
 github.com/bhbosman/gocommon v0.0.0-20230507180205-b30f653fb84c h1:Gak0cmo63hRuZw3nA9UTbJLu4YUT5zEsYJsI0LCEeKE=
 github.com/bhbosman/gocommon v0.0.0-20230507180205-b30f653fb84c/go.mod h1:psJ00h0jPYAZNqF9kjJio25qy1ra1IKj3zWeCp+tTQg=
 github.com/bhbosman/gocommon v0.0.0-20250307235859-f370cb0a3bac/go.mod h1:EPYuWdqTCX8B9u0Q7w4u4FOalx2wbXm+KFQQbS1VHOo=
