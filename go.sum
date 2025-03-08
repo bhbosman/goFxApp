@@ -32,6 +32,8 @@ github.com/bhbosman/goConnectionManager v0.0.0-20250308162041-c3d88e4a7878 h1:Av
 github.com/bhbosman/goConnectionManager v0.0.0-20250308162041-c3d88e4a7878/go.mod h1:rTgsXwIqcz2lmeksaTaDhkY692AJTrfZ+2/1h5o+N84=
 github.com/bhbosman/goConnectionManager v0.0.0-20250308194756-b3c21d488492 h1:DPlP+NR2dn33vRUpT1fyoLBMp3s73qBfrc7gijFR6zs=
 github.com/bhbosman/goConnectionManager v0.0.0-20250308194756-b3c21d488492/go.mod h1:iFbggy9oqgzG5lBZ+P8/rVflhcPHn0GaAi3yCunMyvg=
+github.com/bhbosman/goConnectionManager v0.0.0-20250308201033-1df6054ada09 h1:N+6F2Xw4/tSHSDhWDA2Csbmq0TF2u2fVU0E52Q7UaU0=
+github.com/bhbosman/goConnectionManager v0.0.0-20250308201033-1df6054ada09/go.mod h1:INP4El5vgMDdRSazlBO+i0eta49rK0ushLNtwTzSCD0=
 github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e h1:giFq6ZeuuADPqmulVlZ/O1u1iWFR4wBUylQkQx6rctA=
 github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e/go.mod h1:rQwtY8b+UvdRUVwarMWNWumYE3Pvn63gmaD7pzCRu5s=
 github.com/bhbosman/goFxAppManager v0.0.0-20250307145515-bda0fa4d9959 h1:OzIVWL2V4mgDTjH5qYmgwk6XZ5ubQPP4KI/Xbkv1+AM=
@@ -48,6 +50,8 @@ github.com/bhbosman/goFxAppManager v0.0.0-20250308162229-1292fdd07fc0 h1:RuIV4Mx
 github.com/bhbosman/goFxAppManager v0.0.0-20250308162229-1292fdd07fc0/go.mod h1:S7X5ohnYvimXkHR3pbCeqoS2BH0lbL9hNjNW/hdz8qg=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308192215-e35e337e2f4e h1:ujOQ7T01LCruMlkmNOKvChxjTH2APeazx64/BMNn/AA=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308192215-e35e337e2f4e/go.mod h1:AQYfa/uPA0OfPteZRx5p7NRkgIEhJ6ukg3PIEnBvEFs=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308195907-f3af604d443a h1:CamRlJFJCCjxO3ZZA2TwoAwW835tPwBnvQgbIDay5E0=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308195907-f3af604d443a/go.mod h1:yJO6JVS7gDskW1DWSdpUOL8GIkRXsbsuJ2EVoa1FI5k=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877 h1:ggdUfW6j/BcE8NSielxBeGpOeVKq5tosSxKfbe40Rlc=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877/go.mod h1:DdwkPEkzvKp7S61lzxjViCYGCQg7Rts0UWoMIaKvxj4=
 github.com/bhbosman/goUi v0.0.0-20250308064519-26f29e163722 h1:dZCnL1PLX8x2WBzGirFUPhzSPi3ndOxHggfuXwbKOWk=
@@ -70,6 +74,8 @@ github.com/bhbosman/goUi v0.0.0-20250308192106-f0dba2b1ada7 h1:TjaFwfhgJrIlkULWH
 github.com/bhbosman/goUi v0.0.0-20250308192106-f0dba2b1ada7/go.mod h1:4npkyOdvPaIf3JZHD1C8VntmWlUXRh6sMgAu+l8uUyU=
 github.com/bhbosman/goUi v0.0.0-20250308194827-3465482d7c6b h1:KKdeMYlRS0d9agTti3R066pPJgMIyRiLjyNzEmDO35A=
 github.com/bhbosman/goUi v0.0.0-20250308194827-3465482d7c6b/go.mod h1:fahvqvNfQKJKbhKjy+m8igIGeadfyCT2JlR44+d/RN4=
+github.com/bhbosman/goUi v0.0.0-20250308200805-7b64bf0ddd19 h1:0fWValFXPNbCHcLn6o7T0hRqGSKf3LHFYhaCSZppaWs=
+github.com/bhbosman/goUi v0.0.0-20250308200805-7b64bf0ddd19/go.mod h1:4IniVEpuI/SfKJpx1aIKGL60iPB4u3GXuqv8OKgD5Qg=
 github.com/bhbosman/gocommon v0.0.0-20230507180205-b30f653fb84c h1:Gak0cmo63hRuZw3nA9UTbJLu4YUT5zEsYJsI0LCEeKE=
 github.com/bhbosman/gocommon v0.0.0-20230507180205-b30f653fb84c/go.mod h1:psJ00h0jPYAZNqF9kjJio25qy1ra1IKj3zWeCp+tTQg=
 github.com/bhbosman/gocommon v0.0.0-20250307235859-f370cb0a3bac/go.mod h1:EPYuWdqTCX8B9u0Q7w4u4FOalx2wbXm+KFQQbS1VHOo=
@@ -99,6 +105,7 @@ github.com/bhbosman/pubsub v1.0.3-0.20250308124829-e5731aa33222 h1:cHtirgrswJP8g
 github.com/bhbosman/pubsub v1.0.3-0.20250308124829-e5731aa33222/go.mod h1:k9O2AJEIxJfyjM6xKczmuBumvRC+Pee76jW4Ir0+nTU=
 github.com/bhbosman/pubsub v1.0.3-0.20250308162024-50f212a35484 h1:7L9tOPXEY7T3OCI5uNszNWJ2GqfJAREkZEw77Ki6VZA=
 github.com/bhbosman/pubsub v1.0.3-0.20250308162024-50f212a35484/go.mod h1:/cxRJx2sbd/mII/T3GTLM/2EUisAfq6Zy8qb9lBqpRk=
+github.com/bhbosman/pubsub v1.0.3-0.20250308211253-e47ee222bb15 h1:YAp8HXZRg3cmEvlLz0GgKFnkYNWe6BUA8J+qsoj6MeQ=
 github.com/bhbosman/pubsub v1.0.3-0.20250308211253-e47ee222bb15/go.mod h1:/cxRJx2sbd/mII/T3GTLM/2EUisAfq6Zy8qb9lBqpRk=
 github.com/bhbosman/tcell/v2 v2.5.2-0.20220624055704-f9a9454fab5b h1:mfhKWKkAnnEpjWYcFHR5B3G7VqYSaOJJ5SENyky5nOw=
 github.com/bhbosman/tcell/v2 v2.5.2-0.20220624055704-f9a9454fab5b/go.mod h1:wSkrPaXoiIWZqW/g7Px4xc79di6FTcpB8tvaKJ6uGBo=
