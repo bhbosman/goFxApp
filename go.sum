@@ -38,6 +38,8 @@ github.com/bhbosman/goFxAppManager v0.0.0-20250308072827-0bc0f03a9d29 h1:MT4nSVH
 github.com/bhbosman/goFxAppManager v0.0.0-20250308072827-0bc0f03a9d29/go.mod h1:Jg58N4bm+7BbNQsFZEkgniHFCzONN1jAh2P68MgQFfY=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308140124-9230c32fe2ee h1:lC94YW0tDwIQt6pRBPoZXB399qXPEcmf0ko3ctwpj48=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308140124-9230c32fe2ee/go.mod h1:7co1qgnBKfZJnD/rlSmHM3mw9ESnBSvdsAtLQFGQdFI=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308154830-a52fe01a02cc h1:ydDWvCNKuMHsUZJeTEVCfgvFf13XhQ648v6F7dJ1tBM=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308154830-a52fe01a02cc/go.mod h1:LrzBA2tofPIg1Pb6T5b1RSa684I15mnJImTUniiIf0M=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877 h1:ggdUfW6j/BcE8NSielxBeGpOeVKq5tosSxKfbe40Rlc=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877/go.mod h1:DdwkPEkzvKp7S61lzxjViCYGCQg7Rts0UWoMIaKvxj4=
 github.com/bhbosman/goUi v0.0.0-20250308064519-26f29e163722 h1:dZCnL1PLX8x2WBzGirFUPhzSPi3ndOxHggfuXwbKOWk=
@@ -65,6 +67,8 @@ github.com/bhbosman/gocommon v0.0.0-20250308131803-28622f55deb1 h1:H6xBDuvTUHP3H
 github.com/bhbosman/gocommon v0.0.0-20250308131803-28622f55deb1/go.mod h1:7lml5lQFGVyrvj3awVTQ0SdaqW3WdcKEC8hhcmNGOHE=
 github.com/bhbosman/gocommon v0.0.0-20250308150148-56b7e6e14bff h1:lDqy+h+pbnVXRxXnYyTDLhUA1qWsbFiUTox+30EHfwU=
 github.com/bhbosman/gocommon v0.0.0-20250308150148-56b7e6e14bff/go.mod h1:X1Vckq6MxT7Ozn4fMsUKXkgEgggnsBGs+HX9SWzl+Tk=
+github.com/bhbosman/gocommon v0.0.0-20250308155359-4baa9bec452e h1:92bvDBFSfI/1z0wJf1xgNFwRTAtQ/uPzU6SBtCwDsmo=
+github.com/bhbosman/gocommon v0.0.0-20250308155359-4baa9bec452e/go.mod h1:MgvoWc5dg34pZhFPxwkiw8QBQjYRG8Vg8SQ87+pmYXo=
 github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf h1:uI7bP2Ue0pjjB8j2zWY+nRbjQgeTfmOW6VR7WvVGK1I=
 github.com/bhbosman/goerrors v0.0.0-20220623084908-4d7bbcd178cf/go.mod h1:2aeMPIIYjD7+5AmN1yaV/oAqCaExRDcl7SN+/zFLpew=
 github.com/bhbosman/goerrors v0.0.0-20250307194237-312d070c8e38 h1:3jX77BrDYvQ4xiAQkat+N47OZoKECB9t27fQQfpqGRk=
