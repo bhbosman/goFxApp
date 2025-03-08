@@ -20,6 +20,8 @@ github.com/bhbosman/goConnectionManager v0.0.0-20250308072343-5ecf88215e38 h1:82
 github.com/bhbosman/goConnectionManager v0.0.0-20250308072343-5ecf88215e38/go.mod h1:lD80UgopARIvGKA6vdCE4d2csy/AoOlFxnpx+EoOXtc=
 github.com/bhbosman/goConnectionManager v0.0.0-20250308122653-53a96fe357f2 h1:g2CUTrG6dGqVw7888o7ZQhYTZlUMEN9h1rEzMf6zqA8=
 github.com/bhbosman/goConnectionManager v0.0.0-20250308122653-53a96fe357f2/go.mod h1:3vN5ENCKucbzUATz5ecAUqwF/M7L9lZ5We4Ypevt2c8=
+github.com/bhbosman/goConnectionManager v0.0.0-20250308133907-06eddcd798f6 h1:F/3tByXZDuHMgxKckwNaYZCfiTPKA38M1AHMD7a9I7E=
+github.com/bhbosman/goConnectionManager v0.0.0-20250308133907-06eddcd798f6/go.mod h1:dy73KjrQewhG9PsdJcPJ2d5Jz9BLcyfQAi7kjwKhhqI=
 github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e h1:giFq6ZeuuADPqmulVlZ/O1u1iWFR4wBUylQkQx6rctA=
 github.com/bhbosman/goFxAppManager v0.0.0-20230328220050-a5b50e43977e/go.mod h1:rQwtY8b+UvdRUVwarMWNWumYE3Pvn63gmaD7pzCRu5s=
 github.com/bhbosman/goFxAppManager v0.0.0-20250307145515-bda0fa4d9959 h1:OzIVWL2V4mgDTjH5qYmgwk6XZ5ubQPP4KI/Xbkv1+AM=
@@ -28,6 +30,8 @@ github.com/bhbosman/goFxAppManager v0.0.0-20250308052839-63033ea503a7 h1:26wgm1o
 github.com/bhbosman/goFxAppManager v0.0.0-20250308052839-63033ea503a7/go.mod h1:o+bgVaS4CNXBGvqHXMhttoXO9K4tNT9dvB6t94opHE4=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308072827-0bc0f03a9d29 h1:MT4nSVHj+QHqwfeNrLG++Ju/jlt6g/KNaMXW1iBOvKo=
 github.com/bhbosman/goFxAppManager v0.0.0-20250308072827-0bc0f03a9d29/go.mod h1:Jg58N4bm+7BbNQsFZEkgniHFCzONN1jAh2P68MgQFfY=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308140124-9230c32fe2ee h1:lC94YW0tDwIQt6pRBPoZXB399qXPEcmf0ko3ctwpj48=
+github.com/bhbosman/goFxAppManager v0.0.0-20250308140124-9230c32fe2ee/go.mod h1:7co1qgnBKfZJnD/rlSmHM3mw9ESnBSvdsAtLQFGQdFI=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877 h1:ggdUfW6j/BcE8NSielxBeGpOeVKq5tosSxKfbe40Rlc=
 github.com/bhbosman/goUi v0.0.0-20250307150712-d06325af4877/go.mod h1:DdwkPEkzvKp7S61lzxjViCYGCQg7Rts0UWoMIaKvxj4=
 github.com/bhbosman/goUi v0.0.0-20250308064519-26f29e163722 h1:dZCnL1PLX8x2WBzGirFUPhzSPi3ndOxHggfuXwbKOWk=
