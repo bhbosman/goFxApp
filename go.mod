@@ -3,10 +3,10 @@ module github.com/bhbosman/goFxApp
 go 1.24.0
 
 require (
-	github.com/bhbosman/goConnectionManager v0.0.0-20250308054322-587c786bedb0
-	github.com/bhbosman/goFxAppManager v0.0.0-20250308052839-63033ea503a7
-	github.com/bhbosman/goUi v0.0.0-20250308064519-26f29e163722
-	github.com/bhbosman/gocommon v0.0.0-20250308052839-0ebeb121f996
+	github.com/bhbosman/goConnectionManager v0.0.0-20250308072343-5ecf88215e38
+	github.com/bhbosman/goFxAppManager v0.0.0-20250308072827-0bc0f03a9d29
+	github.com/bhbosman/goUi v0.0.0-20250308073057-c42a9b24bf52
+	github.com/bhbosman/gocommon v0.0.0-20250308071735-43b385b00819
 	github.com/cskr/pubsub v1.0.2
 	github.com/rivo/tview v0.0.0-20241227133733-17b7edb88c57
 	go.uber.org/fx v1.23.0
